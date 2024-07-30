@@ -146,16 +146,20 @@ def animate_sorting(sort_func, bars):
 
 # Main function
 if __name__ == "__main__":
-    choice = input("Choose sorting algorithm: (b)ubble, (i)nsertion, (s)election, (m)erge, (q)uick: ").lower()
-    if choice == 'b':
-        animate_sorting(bubble_sort, bars)
-    elif choice == 'i':
-        animate_sorting(insertion_sort, bars)
-    elif choice == 's':
-        animate_sorting(selection_sort, bars)
-    elif choice == 'm':
-        animate_sorting(merge_sort_wrapper, bars)
-    elif choice == 'q':
-        animate_sorting(quick_sort_wrapper, bars)
-    else:
-        print("Invalid choice.")
+        while True:
+        choice = input("Choose sorting algorithm: (b)ubble, (i)nsertion, (s)election, (m)erge, (q)uick: ").lower()
+        if choice == 'b':
+            animate_sorting(bubble_sort, bars)
+        elif choice == 'i':
+            animate_sorting(insertion_sort, bars)
+        elif choice == 's':
+            animate_sorting(selection_sort, bars)
+        elif choice == 'm':
+            animate_sorting(merge_sort_wrapper, bars)
+        elif choice == 'q':
+            animate_sorting(quick_sort_wrapper, bars)
+        elif choice == 'x':
+            break
+
+        else:
+            print("Invalid choice.")
