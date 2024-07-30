@@ -1,4 +1,4 @@
-Sorting Algorithm Visualization
+Sorting Algorithm Visualizer
 
 Introduction
 
@@ -38,4 +38,5 @@ Usage
 Requirements
 
 ->Python 3.x
+
 ->matplotlib library
